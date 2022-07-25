@@ -17,6 +17,7 @@ function App() {
     const time = `${date.getHours()}:${String(date.getMinutes()).padStart(2, '0')}`
     setResults({dateResult, time, price})
     setDone(true);
+
   }
 
 
