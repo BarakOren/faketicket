@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState} from "react";
+import testush from "./assets/unnamed.jpg";
 
 function App() {
   const [done, setDone] = useState(false)
@@ -17,7 +18,6 @@ function App() {
     const time = `${date.getHours()}:${String(date.getMinutes()).padStart(2, '0')}`
     setResults({dateResult, time, price})
     setDone(true);
-
   }
 
 
@@ -33,10 +33,12 @@ function App() {
           <p id="price">&#8362;{results.price || "hello"}</p>
       </div>
       
+      <img className="test" src={testush} alt="bla" />
+
       <form onSubmit={handleSubmit}>
         <div className="row">
-          <label>price:</label>
-          <input type="text" value={price} onChange={handlePrice} />
+            <label>price:</label>
+            <input type="text" value={price} onChange={handlePrice} />
         </div>
         <button type="submit">SUBMIT</button>
       </form>
