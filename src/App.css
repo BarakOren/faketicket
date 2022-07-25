@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(224, 217, 185);
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+form {
+  height: 30%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 50px;
+}
+
+input {
+  font-size: 30px;
+  width: 50%;
+  background-color: white;
+}
+
+button {
+  margin-top: 50px;
+  width: 80%;
+  font-size: 30px;
+  border: none;
+  border-radius: 6px;
+  height: 40%;
+  background-color: rgb(43, 43, 43);
+  color:white;
+  outline: none;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("./assets/unnamed.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+p {
+  font-size: 18px;
+  position: absolute;
+  top: 293px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#date{
+  left: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#time {
+  left: 195px;
+}
+
+#iphoneTime {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+#price {
+  top: 412px;
+  left: 22px;
+  font-size: 16px;
+  background-color: #18191b;
+  width: 50px;
 }
