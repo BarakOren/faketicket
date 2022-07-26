@@ -33,7 +33,7 @@ function App() {
           <p id="price">&#8362;{results.price || "hello"}</p>
       </div>
       
-      <img className="test" src={testush} alt="bla" />
+      {/* <img className="test" src={testush} alt="bla" /> */}
 
       <form onSubmit={handleSubmit}>
         <div className="row">
